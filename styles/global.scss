@@ -1,0 +1,12 @@
+@import "./lib/normalize";
+@import "./lib/swiper";
+
+// остальные дальше
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+.container {
+  position: relative;
+}
