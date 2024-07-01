@@ -1,12 +1,32 @@
 @import "./lib/normalize";
 @import "./lib/swiper";
+@import "./ui/container";
+@import "./components/container";
+@import "./sections/container";
 
 // остальные дальше
 * {
   box-sizing: border-box;
   font-family: "Noto Sans Display", sans-serif;
+  
 }
 
 .container {
   position: relative;
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: fit-content;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }

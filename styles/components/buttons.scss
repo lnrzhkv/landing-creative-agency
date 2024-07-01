@@ -1,0 +1,19 @@
+.btn-primary {
+padding: 12px 32px;
+border-radius: 24px;
+height: 48px;
+width: fit-content;
+@include font-noto(18px, 600);
+letter-spacing: 0.01em;
+text-align: center;
+background-color: var(--color-pink);
+ transition: all 700ms;
+
+border: none;
+cursor: pointer;
+
+
+}
+.btn-primary:hover {
+  background-color: var(--color-pink-light);
+}

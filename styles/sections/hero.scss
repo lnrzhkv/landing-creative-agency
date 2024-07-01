@@ -1,0 +1,64 @@
+.hero {
+  height: 864px;;
+  background-image: url(/images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  // background-size: contain;
+  padding: 64px 160px;
+
+  .hero-content {
+    @include flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 970px;
+    margin: 0 auto;
+
+    .hero-title {
+      @include font-noto(112px, 700, 100%);
+      text-align: center;
+      margin: 0;
+
+      .text-select::before {
+        content: url(/images/select-outline.png);
+        position: absolute;
+        top: 120px;
+        left: 282px;
+        z-index: -1;
+      }
+    }
+  }
+
+  .hero-subtitle {
+    @include font-noto(20px, 400);
+    text-align: center;
+    width: 726px;
+    margin: 0;
+  }
+
+  .input-wrapper {
+    border-radius: 100px;
+    padding: 8px 16px;
+    width: 567px;
+    height: 64px;
+    background: #fff;
+    @include flex(space-between);
+
+    & input {
+      border: none;
+      outline: none;
+
+      & placeholder {
+        @include font-noto(20px, 400);
+        color: var();
+      }
+    }
+
+    :focus {
+      color: var(--color-text);
+    }
+  }
+
+  .input-wrapper:hover {
+    border: 1px solid var(--color-grey-light);
+  }
+}

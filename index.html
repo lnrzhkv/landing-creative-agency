@@ -8,15 +8,108 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles/global.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>The Creator</title>
   </head>
+
   <body>
     <header>
-
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-logo">
+            <img src="images/icons/logo.svg" alt="logo" />
+            <span>The Creator</span>
+          </div>
+          <nav>
+            <ul>
+              <li>Partners</li>
+              <li>How we Work</li>
+              <li>Review</li>
+              <li>Charity</li>
+            </ul>
+          </nav>
+          <button class="btn-primary">Join The Creator</button>
+        </div>
+      </div>
     </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Spark your <span class="text-select">brand's</span> imaginative
+            flair with us
+          </h1>
+          <h2 class="hero-subtitle">
+            Our team combines strategy, design, and technology to breathe life
+            into your brand. Collaborate with us to leave a lasting impression
+            on your audience.
+          </h2>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              name="e-mail"
+              id="e-mail"
+              placeholder="Enter your Email"
+            />
+            <button class="btn-primary">Join</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+        <h2 class="title">
+          Contact us today to explore partnership opportunities!
+        </h2>
+        <div class="partners-content">
+          <div class="content-area">
+            <span class="content-title">Partners:</span>
+            <div class="content-descr"></div>
+            Our creative agency forms strong partnerships with diverse
+            businesses, from startups to global brands, based on trust, respect,
+            and a shared vision for success.
+          </div>
+          <div class="swiper partners-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="slide-card-wrapper">
+                  <div class="slide-card-content">
+                    <img src="images/icons/twitter-logo.svg" alt="twitter" />
+                    <span class="date">2008 — TODAY</span>
+                    <div class="slide-card-descr">
+                      Provides communication between the agency and brands.
+                      Collects customer feedback and encourages discussion about
+                      the product, which helps improve it.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-card-wrapper light">
+                  <div class="slide-card-content">
+                    <img src="images/icons/pintrest-logo.svg" alt="twitter" />
+                    <span class="date">2012 — TODAY</span>
+                    <div class="slide-descr">
+                      Provide unlimited access to artist and designer boards.
+                      Provides communication with them and creative partnership.
+                      Provides participation in creative conferences
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="swiper partners-swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
