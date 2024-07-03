@@ -35,29 +35,6 @@
     margin: 0;
   }
 
-  .input-wrapper {
-    border-radius: 100px;
-    padding: 8px 16px;
-    width: 567px;
-    height: 64px;
-    background: #fff;
-    @include flex(space-between);
-
-    & input {
-      border: none;
-      outline: none;
-
-      & placeholder {
-        @include font-noto(20px, 400);
-        color: var();
-      }
-    }
-
-    :focus {
-      color: var(--color-text);
-    }
-  }
-
   .input-wrapper:hover {
     border: 1px solid var(--color-grey-light);
   }

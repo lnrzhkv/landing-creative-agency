@@ -1,0 +1,58 @@
+.footer {
+  padding: 64px;
+
+  .footer-wrapper {
+    @include flex;
+    flex-direction: column;
+    gap: 64px;
+
+    .title {
+      width: 100%;
+    }
+
+    .subtitle {
+      @include font-noto(20px, 400);
+      text-align: center;
+      margin: 0;
+    }
+
+    .footer-menu {
+      @include flex(space-between);
+      width: 100%;
+
+      .license {
+        @include flex;
+        gap: 8px;
+
+        & span {
+          @include font-noto(20px, 400);
+        }
+      }
+
+      .menu-list {
+        & ul {
+          @include flex;
+          gap: 32px;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+
+          & li {
+            @include font-noto(20px, 500);
+            transition: all 500ms;
+          }
+
+          :hover {
+            color: var(--color-pink-light);
+            cursor: pointer;
+          }
+        }
+      }
+
+      .footer-social {
+        @include flex;
+        gap: 16px;
+      }
+    }
+  }
+}
