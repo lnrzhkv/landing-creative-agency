@@ -1,0 +1,72 @@
+.review {
+  padding: 64px 160px 64px;
+
+  .text-content {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    gap: 64px;
+    margin-bottom: 36px;
+    // width: 900px;
+
+    .notify {
+      text-align: center;
+      margin: 0;
+      @include font-noto(20px, 400);
+      width: 1192px;
+    }
+
+    .review-title {
+      @include font-noto(56px, 700);
+      text-align: start;
+      margin: 0;
+      width: 916px;
+      position: relative;
+
+      .select-outline::after {
+        content: url(/images/select-outline-light.png);
+        position: absolute;
+        top: 82px;
+        right: 121px;
+        z-index: -1;
+      }
+
+      .select-underline::after {
+        content: url(/images/line-light.png);
+        position: absolute;
+        top: 11px;
+        left: 154px;
+        z-index: -1;
+      }
+    }
+
+    .review-descr {
+      @include font-noto(32px, 700);
+      margin: 0;
+    }
+  }
+
+  .clients-content {
+    border-radius: 16px;
+    padding: 24px 56px;
+    width: 508px;
+    height: fit-content;
+    background-color: var(--color-pink-light);
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    gap: 16px;
+
+    .client-name {
+      @include font-noto(32px, 500);
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+
+    .client-info {
+      @include font-noto(20px, 400);
+    }
+  }
+
+  .pink {
+    background-color: var(--color-pink);
+  }
+}

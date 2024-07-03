@@ -15,12 +15,12 @@ new Swiper(".partners-swiper", {
   grabCursor: true,
 });
 
-new Swiper(".testimonials-swiper", {
+new Swiper(".clients-swiper", {
   modules: [Autoplay],
+  slidesPerView: 3,
   loop: true,
-  slidesPerView: 2,
-  centeredSlides: true,
-  spaceBetween: 32,
+  spaceBetween: 16,
+  width: 508 + 508 + 508 + 16 + 16,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,

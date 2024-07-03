@@ -1,0 +1,42 @@
+.reliability {
+  padding: 64px 160px 64px;
+
+  .reliability-wrapper {
+    width: 1192px;
+    height: 515px;
+    @include flex;
+    gap: 32px;
+
+    .reliability-content {
+      border-radius: 16px;
+      width: 580px;
+      height: 100%;
+      background-color: var(--color-pink);
+      padding: 56px 0 24px;
+      @include flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .light {
+      background-color: var(--color-light);
+      padding: 56px;
+      gap: 8px;
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+    }
+
+    .reliability-descr {
+      @include font-noto(20px, 400, 160%);
+      width: 390px;
+      margin: 0;
+
+    }
+
+    .reliability-title {
+      @include font-noto(56px, 700);
+      text-align: start;
+      margin: 0;
+    }
+  }
+}
