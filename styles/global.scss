@@ -8,7 +8,6 @@
 * {
   box-sizing: border-box;
   font-family: "Noto Sans Display", sans-serif;
-  
 }
 
 .container {
@@ -30,3 +29,13 @@ body {
 a {
   text-decoration: none;
 }
+
+.title {
+  @include font-noto(56px, 700);
+  text-align: center;
+  margin: 0 auto;
+  width: 920px;
+  position: relative;
+}
+
+

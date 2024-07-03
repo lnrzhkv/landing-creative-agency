@@ -1,0 +1,28 @@
+.work-info {
+  padding: 64px 160px 64px;
+  background-image: url(/images/work-info-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .work-info-wrapper {
+    @include flex;
+    flex-direction: column;
+    gap: 42px;
+
+    .work-info-subtitle {
+      margin: 0;
+      text-align: center;
+      @include font-noto(32px, 700);
+      max-width: 922px;
+    }
+
+    .work-info-descr {
+      margin: 0;
+      text-align: center;
+      @include font-noto(20px, 400);
+      max-width: 922px;
+    }
+  }
+}
+
+

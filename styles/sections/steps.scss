@@ -1,0 +1,34 @@
+.steps {
+  padding: 64px 160px 64px;
+
+  .steps-wrapper {
+    width: 1050px;
+    display: grid;
+    grid-template-columns: 2fr 500px;
+    gap: 64px 32px;
+
+    .steps-info-item {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .steps-title {
+        @include font-noto(40px, 700);
+      }
+
+      .steps-descr {
+        @include font-noto(20px, 400);
+        width: 374px;
+      }
+    }
+
+    .steps-content-item {
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.work-promo {
+  padding: 64px 160px 32px;
+
+  & img {
+  @include flex;
+  margin: 0 auto;
+  }
+}
